@@ -1,6 +1,8 @@
 KCP - A Fast and Reliable ARQ Protocol
 ======================================
+
 [![Powered][2]][1] [![Build Status][4]][5]
+
 [1]: https://github.com/skywind3000/kcp
 [2]: http://skywind3000.github.io/word/images/kcp.svg
 [3]: https://raw.githubusercontent.com/skywind3000/kcp/master/kcp.svg
@@ -133,7 +135,7 @@ TCP是为流量设计的（每秒内可以传输多少KB的数据），讲究的
 - [性能评测](https://github.com/skywind3000/kcp/wiki/KCP-Benchmark)
 
 
-# 相关应用
+# 开源案例
 
 - [kcptun](https://github.com/xtaci/kcptun): 基于 kcp-go做的高速远程端口转发(隧道) ，配合ssh -D，可以比 shadowsocks 更流畅的看在线视频。
 - [dog-tunnel](https://github.com/vzex/dog-tunnel): GO开发的网络隧道，使用 KCP极大的改进了传输速度，并移植了一份 GO版本 KCP
@@ -143,10 +145,24 @@ TCP是为流量设计的（每秒内可以传输多少KB的数据），讲究的
 - [kcp-go](https://github.com/xtaci/kcp-go): 高安全性的kcp的 GO语言实现，包含 UDP会话管理的简单实现，可以作为后续开发的基础库。 
 - [kcp-csharp](https://github.com/limpo1989/kcp-csharp): kcp的 csharp移植，同时包含一份回话管理，可以连接上面kcp-go的服务端。
 - [kcp-rs](https://github.com/en/kcp-rs): KCP的 rust移植
+- [kcp-rust](https://github.com/Matrix-Zhang/kcp)：新版本 KCP的 rust 移植
+- [tokio-kcp](https://github.com/Matrix-Zhang/tokio_kcp)：rust tokio 的 kcp 集成
 - [lua-kcp](https://github.com/linxiaolong/lua-kcp): KCP的 Lua扩展，用于 Lua服务器
 - [node-kcp](https://github.com/leenjewel/node-kcp): node-js 的 KCP 接口  
 - [shadowsocks-android](https://github.com/shadowsocks/shadowsocks-android): Shadowsocks for android 集成了 kcptun 使用 kcp协议加速 shadowsocks，效果不错
-- [kcpuv](https://github.com/elisaday/kcpuv): 使用 libuv开发的kcpuv库，目前还在 Demo阶段。
+- [kcpuv](https://github.com/elisaday/kcpuv): 使用 libuv开发的kcpuv库，目前还在 Demo阶段
+- [Lantern](https://getlantern.org/)：更好的 VPN，Github 50000 星，使用 kcpgo 加速
+- [rpcx](https://github.com/smallnest/rpcx) ：RPC 框架，1000+ 星，使用 kcpgo 加速 RPC
+
+# 商业案例
+
+- [明日帝国](https://www.taptap.com/app/50664)：Game K17 的 《明日帝国》 （Google Play），使用 KCP 加速游戏消息，让全球玩家流畅联网
+- [仙灵大作战](https://www.taptap.com/app/27242)：4399 的 MOBA游戏，使用 KCP 优化游戏同步
+- [CC](http://cc.163.com/)：网易 CC 使用 kcp 加速视频推流，有效提高流畅性
+- [BOBO](http://bobo.163.com/)：网易 BOBO 使用 kcp 加速主播推流
+- [云帆加速](http://www.yfcloud.com/)：使用 KCP 加速文件传输和视频推流，优化了台湾主播推流的流畅度
+
+欢迎告知更多案例
 
 # 协议比较
 
